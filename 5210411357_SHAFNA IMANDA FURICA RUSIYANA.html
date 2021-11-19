@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Shafna Imanda Furica Rusiyana</title>
+</head>
+<body>
+    <body>
+        <div class="col-12">
+            <div class="col-4 container ">
+                <div id="header">
+                     <h1>Form Registrasi</h1>
+                </div>
+              <div class="col-12" style="padding-bottom: 20px;">
+            <form class="col-8 form-container" action="/action.php" method="post" autocomplete="on" id="form1">
+            
+             
+              <div class="form-grup">
+                <div class="label-form">
+                  <label>Nama Lengkap</label>
+                </div>
+                <div class="input-form">
+                  <input type="text" name="nama" placeholder="Masukan Nama Lengkap Anda" maxlength="20" autofocus  required>
+                </div>
+              </div>
+
+              <div class="form-grup">
+                <div class="label">
+                  <label>Gender</label>
+                </div>
+                <div class="input">
+                  <input type="radio" name="gender" value="1"> Laki-laki <br>
+                  <input type="radio" name="gender" value="2"> Perempuan
+                </div>
+              </div>
+
+              <div class="form-grup">
+                <div class="label-form">
+                  <label>Email</label>
+                </div>
+                <div class="input-form">
+                    <input type="email" name="email" placeholder="Masukan Email Anda" maxlength="20" autocomplete="on" required>
+                </div>
+              </div>
+           
+              <div class="form-grup" style="padding-bottom:20px">
+                <div class="label">
+                  <label>Program Studi</label>
+                </div>
+                <div class="input"  >
+                  <select name="program">
+                    <option value="Sipil" selected>Teknil Sipil</option>
+                    <option value="Arsitektur" selected>Arsitektur</option>
+                    <option value="Psikologi" selected>Psikologi</option>
+                    <option value="Informatika" selected>Informatika</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-grup">
+                <div class="label">
+                  <label>Hobi</label>
+                </div>
+                <div class="input">
+                  <input type="checkbox" name="hobi" value="game"> Game <br>
+                  <input type="checkbox" name="hobi" value="sepakbola">Sepakbola<br>
+                  <input type="checkbox" name="hobi" value="renang">Renang <br>
+                  <input type="checkbox" name="hobi" value="badminton">badminton <br>
+                </div>
+              </div>
+
+              <div class="form-grup">
+                <div class="label-form">
+                  <label>Alamat</label>
+                </div>
+                <div class="input-form">
+                  <textarea name="alamat" placeholder="Masukan Alamat Anda" rows="6"></textarea>
+                </div>
+              </div>
+          
+              <div class="form-grup" style="padding-bottom: 20px ;">
+                  <div>
+                    <a href="#"><button style="border: none;border-radius: 5px;width:100px;height: 40px;"  type="submit">KIRIM</button></a>
+                  </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text],  textarea,input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.form-container {
+     background: white;
+     color: black;
+     margin-left: auto;
+    margin-right: auto;
+    font-family: "Calibri",sans-serif;
+    padding: 10px;
+}
+.label{
+	float: left;
+	width: 60%;
+    font-family: "Calibri",sans-serif;
+}
+
+.form-grup{
+    margin-bottom: 20px;
+}
+.form-grup button{
+    float:right;background-color: #458DC4;color: white;cursor: pointer;
+}
+.input{
+	float: left;
+	width: 40%;
+	border: 0;
+}
+
+#header h1{
+  font-size: 14pt;
+  text-align: center;
+  font-family: "Calibri",sans-serif;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Calibri",sans-serif;
+  background-color: #458DC4;
+  color: white;
+    }
+@media only screen and (min-width: 768px) { 
+    /* For desktop: */ 
+    .col-1 {width: 8.33%;} 
+    .col-2 {width: 16.66%;} 
+    .col-3 {width: 25%;} 
+    .col-4 {width: 33.33%;} 
+    .col-5 {width: 41.66%;} 
+    .col-6 {width: 50%;} 
+    .col-7 {width: 58.33%;} 
+    .col-8 {width: 66.66%;} 
+    .col-9 {width: 75%;} 
+    .col-10 {width: 83.33%;} 
+    .col-11 {width: 91.66%;} 
+    .col-12 {width: 100%;} 
+} 
+</style>
